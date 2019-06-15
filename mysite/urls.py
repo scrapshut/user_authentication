@@ -20,5 +20,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('blog.urls')),
     url(r'',include('django.contrib.auth.urls')),
+    url(r'^oauth/', include('social_django.urls',namespace = 'social')),
+    
 
 ]
